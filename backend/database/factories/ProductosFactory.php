@@ -18,6 +18,10 @@ class ProductosFactory extends Factory
     {
         return [
             //
+            'name' => $this->faker->word,
+            'price' => $this->faker->randomFloat(2, 10, 100),
+            'description' => $this->faker->sentence,
+            'image' => $this->faker->imageUrl(), 
         ];
     }
 }
